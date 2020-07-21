@@ -19,11 +19,11 @@ class MahasiswaSeeder extends Seeder
         ]);*/
 
         $faker = Faker::create('id_ID');
-        for($i=1; $i<=10000; $i++)
+        for($i=1; $i<=50000; $i++)
         {
             DB::table('mahasiswa')->insert([
             'nama'=>$faker->name,
-            'nim'=>$faker->postcode,
+            'nim'=>$faker->numberBetween(110000000,150000000),
             'alamat'=>$faker->address
         ]);
         }
