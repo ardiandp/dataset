@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('dependent-dropdown', 'DependentDropdownController@index')
+    ->name('dependent-dropdown.index');
+
+Route::post('dependent-dropdown', 'DependentDropdownController@store')
+    ->name('dependent-dropdown.store');
