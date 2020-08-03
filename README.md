@@ -2,13 +2,14 @@ Ini adalah dataset Faker yang digunakan untuk pengujian Database atau yang lainy
 Data ini bersifat terbuka dan siapa saja boleh menggunakan data ini untuk keperluan penelitian dan yang sejenisnya 
 
 Cara untuk menggunakan dataset ini
+
 Requarment
 - PHP 7.2 atau diatasnya
 - Database Mysql/MariaDB
 - Postgres
 - Composer
 
-1. clone repositori : git clone 
+1. clone repositori : https://github.com/ardiandp/dataset.git
 2. cd /dataset
 3. composer install
 4. cp .envexample .env
