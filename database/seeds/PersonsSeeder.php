@@ -23,8 +23,7 @@ class PersonsSeeder extends Seeder
                 'email'=>$faker->freeEmail,
                 'alamat'=>$faker->address,
                 'agama'=>$faker->numberBetween(11,15),
-                'pekerjaan'=>$faker->jobTitle ,
-                
+                'pekerjaan'=>$faker->jobTitle,                
             ]);
         }
     }

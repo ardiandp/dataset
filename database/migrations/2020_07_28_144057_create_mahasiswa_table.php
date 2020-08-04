@@ -17,6 +17,9 @@ class CreateMahasiswaTable extends Migration
             $table->increments('id');
             $table->string('nama');
             $table->integer('nim');
+            $table->string('email');
+            $table->string('phone');
+            $table->integer('id_jurusan');
             $table->text('alamat');
             $table->timestamps();
         });

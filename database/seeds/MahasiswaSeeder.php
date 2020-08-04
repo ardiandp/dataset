@@ -24,7 +24,10 @@ class MahasiswaSeeder extends Seeder
             DB::table('mahasiswa')->insert([
             'nama'=>$faker->name,
             'nim'=>$faker->numberBetween(110000000,150000000),
-            'alamat'=>$faker->address
+            'email'=>$faker->freeEmail,
+            'phone'=>$faker->phoneNumber,
+            'id_jurusan'=>$faker->numberBetween(10,15),
+            'alamat'=>$faker->address,
         ]);
         }
     }
